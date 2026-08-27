@@ -1,0 +1,94 @@
+body {
+  margin: 5% 10%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+   font-weight: lighter;
+}
+
+main {
+  padding: 10px;
+}
+
+.logo_box {
+ width: 90%;
+ background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+	width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home_main {
+   display: flex;
+}
+
+.home_content {
+  width: 75%;
+}
+
+.donate_link {
+  margin-left: 20%;
+}
+
+p, ul {
+  line-height: 1.5;
+  font-size: 12pt;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px;
+  font-size: large;
+  color: black;
+}
+
+nav .active {
+  background-color: lightgrey;
+  text-decoration: bold;
+}
+nav a:hover {
+  background-color: #EEEEEE;
+}
+
+nav {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_box {
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 90%;
+	background-color: white;
+}
+
+header {
+  text-align: center; 
+}
+
+.home_header {
+	font-style: italic;
+	font-size: 16pt;
+}
+
+footer {
+  text-align: center;
+  font-size: 12pt;
+}
+
+.footer_text {
+	font-size: 10pt;
+	margin: 5px;
+}
+
