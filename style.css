@@ -24,15 +24,9 @@ main {
   margin-right: auto;
 }
 
-.footer_text_and_logo {
-  margin-left: 15%;
-  width: 40%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .footer_logo {
   margin-top: 10px;
+  margin-bottom: 15px;
   max-height: 50px;
 }
 
@@ -64,10 +58,14 @@ p, ul {
 }
 
 nav a {
+  margin-top: 5px;
+  border: 2px solid lightgrey;
+  border-radius: 5%;
   text-decoration: none;
   padding: 5px;
   font-size: large;
   color: black;
+  background-color: #EEEEEE;
 }
 
 nav .active {
@@ -75,7 +73,7 @@ nav .active {
   text-decoration: bold;
 }
 nav a:hover {
-  background-color: #EEEEEE;
+  background-color: white;
 }
 
 nav {
