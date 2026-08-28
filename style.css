@@ -24,6 +24,26 @@ main {
   margin-right: auto;
 }
 
+.footer_text_and_logo {
+  margin-left: 15%;
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer_logo {
+  margin-top: 10px;
+  max-height: 50px;
+}
+
+hr {
+  color:blue
+}
+
+h1 {
+  color: navy;
+}
+
 .home_main {
    display: flex;
 }
@@ -62,6 +82,7 @@ nav {
   margin: auto;
   max-width: 800px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
