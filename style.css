@@ -31,7 +31,7 @@ main {
 }
 
 hr {
-  color:blue
+  color:rgb(20,70,255);
 }
 
 h1 {
@@ -59,17 +59,17 @@ p, ul {
 
 nav a {
   margin-top: 5px;
-  border: 2px solid lightgrey;
+  border: 2px solid rgb(180, 200, 255);
   border-radius: 5%;
   text-decoration: none;
   padding: 5px;
   font-size: large;
-  color: black;
-  background-color: #EEEEEE;
+  color: navy;
+  background-color: rgb(230, 240, 255);
 }
 
 nav .active {
-  background-color: lightgrey;
+  background-color: rgb(180, 200, 255);
   text-decoration: bold;
 }
 nav a:hover {
