@@ -187,4 +187,19 @@ footer {
  justify-content: center;
 }
 
+.available_snippet_inner_div {
+  display: flex;
+  margin-top: 5px;
+}
+
+.snippet_thumb {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.available_title {
+  text-decoration: none;
+  font-size: large;
+  color: rgb(120, 120, 120);
+}
 
