@@ -1,3 +1,5 @@
+/* Site-wide look-and-feel */
+
 body {
   margin: 5% 10%;
   background-color: white;
@@ -8,6 +10,25 @@ body {
 main {
   padding: 10px;
 }
+
+p, ul {
+  line-height: 1.5;
+  font-size: 12pt;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+  color:blue
+}
+
+h1 {
+  color: navy;
+}
+
+/* End Site-wide look-and-feel */
+
+/* Header formatting */
 
 .logo_box {
  width: 90%;
@@ -22,39 +43,6 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.footer_logo {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  max-height: 50px;
-}
-
-hr {
-  color:blue
-}
-
-h1 {
-  color: navy;
-}
-
-.home_main {
-   display: flex;
-}
-
-.home_content {
-  width: 75%;
-}
-
-.donate_link {
-  margin-left: 20%;
-}
-
-p, ul {
-  line-height: 1.5;
-  font-size: 12pt;
-  font-weight: lighter;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a {
@@ -76,7 +64,7 @@ nav a:hover {
   background-color: white;
 }
 
-nav {
+.nav_normal {
   margin: auto;
   max-width: 800px;
   display: flex;
@@ -85,7 +73,7 @@ nav {
 }
 
 .nav_box {
-	 display: block;
+	display: block;
   margin-left: auto;
   margin-right: auto;
 	width: 90%;
@@ -96,9 +84,14 @@ header {
   text-align: center; 
 }
 
-.home_header {
-	font-style: italic;
-	font-size: 16pt;
+/* End Header Formatting */
+
+/* Footer Formatting */
+
+.footer_logo {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  max-height: 50px;
 }
 
 footer {
@@ -111,6 +104,32 @@ footer {
 	margin: 5px;
 }
 
+/* End Footer Formatting */
+
+/* Page-specifics: if this gets too large, can be split into separate stylesheets */
+
+/* Home */
+
+.home_main {
+   display: flex;
+}
+
+.home_content {
+  width: 75%;
+}
+
+.home_header {
+	font-style: italic;
+	font-size: 16pt;
+}
+
+/* Donate */
+
+.donate_link {
+  margin-left: 20%;
+}
+
+/* Individual horse pages */
 
 .gallery {
   max-width: 100px;
@@ -133,8 +152,10 @@ footer {
   opacity: 100%;
   font-size: 10vh;
   padding-top: 35vh;
+  user-select: none;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-
 
 .prev_image {
   left: 0;
@@ -153,24 +174,6 @@ footer {
 /* avoid display: none to still take up the same amount of flex space horizontally */
 .hidden{ color: white; opacity: 0%; user-select: none; }
 
-.modal_close_layer {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
-  padding: 0px;
-  align-content: center;
-}
-
-.modal_spinner {
-  display: inline-block;
-  margin-left: 40%;
-  font-size: 24pt;
-}
-
 #fullSizeImage {
   display: block;
   margin-left: auto;
@@ -179,6 +182,7 @@ footer {
 
 #imageGallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -186,6 +190,8 @@ footer {
  display: flex;
  justify-content: center;
 }
+
+/* Available/Placed horses list pages */
 
 .available_snippet_inner_div {
   display: flex;
@@ -203,3 +209,85 @@ footer {
   color: rgb(120, 120, 120);
 }
 
+/* Mobile (or tiny desktop) */
+
+
+.nav_box_mobile {
+	display: none;
+  margin-left: auto;
+  margin-right: auto;
+	width: 90%;
+}
+
+.hamburger {
+  width: 20%;
+  z-index: 5;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #f8982b;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/**
+Nav Styles
+**/
+.nav {
+  width: 50%;
+  height: 100%;
+  background-color: lightgray;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  display:contents;
+}
+
+.nav_mobile {
+  margin: auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav_link {
+  margin-top: 5px;
+  text-decoration: none;
+  padding: 5px;
+  font-size: large;
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .nav_box {
+    display: none;
+  }
+  .nav_box_mobile {
+    display: flex;
+  }
+}

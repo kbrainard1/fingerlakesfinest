@@ -1,4 +1,3 @@
-var carouselThumb = 0;
 var carouselIndex = 0;
 
 function displayFullSize(index) {
@@ -64,6 +63,13 @@ function resizeImage() {
     // update visible component dimensions
     image.style.width = adjustedWidth + "px";
     image.style.height = adjustedHeight + "px";
+
+    var prevImage = document.querySelector(".prev_image");
+    var nextImage = document.querySelector(".next_image");
+    prevImage.style.fontSize = (adjustedHeight * .1) + "px";
+    prevImage.style.paddingTop = (adjustedHeight * .45) + "px";
+    nextImage.style.fontSize = (adjustedHeight * .1) + "px";
+    nextImage.style.paddingTop = (adjustedHeight * .45) + "px";
 }
 
 function checkBounds() {
