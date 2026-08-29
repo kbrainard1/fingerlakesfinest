@@ -148,7 +148,8 @@ footer {
 
 .mobile_home_gallery {
   float: left;
-  width: 30vw;
+  max-width: 40vw;
+  max-height: 100px;
 }
 
 #avail_gallery_outer {
