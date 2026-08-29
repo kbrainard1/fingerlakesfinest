@@ -1,25 +1,9 @@
 var carouselThumb = 0;
-var carouselGallery;
+var carouselIndex = 0;
 
-function displayModal(index, galleryId) {
+function displayFullSize(index) {
     carouselIndex = index;
-    carouselGallery = document.getElementById(galleryId);
     displayImage();
-    document.querySelector(".modal").style.display = "flex";
-    document.querySelector(".modal_close_layer").style.display = "block";
-}
-
-function closeModal() {
-    carouselIndex = 0;
-    document.querySelector(".modal").style.display = "none";
-    document.querySelector(".modal_close_layer").style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == document.querySelector(".modal") ||
-        event.target == document.querySelector(".modal_close_layer")) {
-        closeModal();
-    }
 }
 
 function prevImage() {
@@ -33,18 +17,15 @@ function nextImage() {
 }
 
 function displayImage() {
-    var nextImage = carouselGallery.children[carouselIndex].getAttribute("full_size");
-
-    document.querySelector(".modal_image").src = nextImage;
-    document.querySelector(".modal_content").style.visibility = "hidden";
-    document.querySelector(".modal_spinner").style.visibility = "";
     checkBounds();
+    var nextImage = document.getElementById("imageGallery").children[carouselIndex].getAttribute("full_size");
+    document.getElementById("fullSizeImage").src = nextImage;
 }
 
-// "Scale this image to at most 70% of the page in terms of width/height,
+// "Scale this image to at most 80% of the page in terms of width/height,
 // and then set the outer div to those dimensions" is not easily expressed
 // in CSS in both firefox and chromium.
-function resize() {
+function resizeImage() {
     var windowWidth = window.innerWidth;
     var windowHeight = window.innerHeight;
 
@@ -58,13 +39,13 @@ function resize() {
         windowHeight = screenHeight;
     }
 
-    var smallWindowWidth = windowWidth * 0.7;
-    var smallWindowHeight = windowHeight * 0.7;
+    var smallWindowWidth = windowWidth * 0.8;
+    var smallWindowHeight = windowHeight * 0.8;
 
     // determine limiting dimension for image scaling
-    var modalImage = document.querySelector(".modal_image");
-    const imageWidth = modalImage.naturalWidth;
-    const imageHeight = modalImage.naturalHeight;
+    var image = document.getElementById("fullSizeImage")
+    const imageWidth = image.naturalWidth;
+    const imageHeight = image.naturalHeight;
 
     const widthFraction = smallWindowWidth / imageWidth;
     const heightFraction = smallWindowHeight / imageHeight;
@@ -81,46 +62,21 @@ function resize() {
     }
 
     // update visible component dimensions
-    modalImage.style.width = adjustedWidth + "px";
-    modalImage.style.height = adjustedHeight + "px";
-    var modalContent = document.querySelector(".modal_content");
-    modalContent.style.width = adjustedWidth + "px";
-    modalContent.style.height = adjustedHeight + "px";
-
-    // We want it to hover just above the gallery, centered
-    var galleryLocation = carouselGallery.getBoundingClientRect();
-    var remainingWidth = (windowWidth - adjustedWidth) / 2;
-    var gapToGallery = 15;
-
-    // center image and gallery on screen
-    var remainingHeight = (windowHeight - adjustedHeight - 100 - gapToGallery) / 2;
-
-    modalContent.style.marginLeft = remainingWidth + "px";
-
-    var scrollY = window.scrollY;
-    // safari
-    if (scrollY < 0) {
-        scrollY = 0;
-    }
-
-    var newHeight = galleryLocation.top - adjustedHeight + scrollY - gapToGallery;
-    modalContent.style.marginTop = newHeight + "px";
-
-    document.querySelector(".modal_spinner").style.visibility = "hidden";
-    modalContent.style.visibility = "";
-    modalContent.scrollIntoView(); // if the gallery was near the top of the page, the image opens out of view, which is weird
-    window.scrollBy(0, -1*remainingHeight); // give the image a little space
+    image.style.width = adjustedWidth + "px";
+    image.style.height = adjustedHeight + "px";
 }
 
 function checkBounds() {
-    var numChildren = carouselGallery.childElementCount;
+    var numChildren = document.getElementById("imageGallery").childElementCount;
     if (carouselIndex <= 0) {
         hide("prev_image");
+        carouselIndex = 0;
     } else {
         show("prev_image");
     }
     if (carouselIndex >= numChildren - 1) {
         hide("next_image");
+        carouselIndex = numChildren - 1;
     } else {
         show("next_image");
     }
