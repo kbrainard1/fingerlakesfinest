@@ -127,14 +127,23 @@ footer {
   display: none;
 }
 
-.mobile_home_gallery_text, #avail_gallery_outer, .mobile_home_gallery_title {
+#avail_gallery_outer, .mobile_home_gallery_title {
   text-decoration: none;
   padding: 5px;
   color: black;
 }
 
+#mobile_home_gallery_text {
+  font-size: 9pt;
+}
+
+.mobile_large_image_wrapper {
+ grid-column: 1 / 3;
+}
+
 .mobile_home_gallery {
   float: left;
+  width: 40vw;
 }
 
 #avail_gallery_outer {
@@ -246,8 +255,8 @@ footer {
 }
 
 .hamburger {
-  width: 20%;
-  height: 20%;
+  width: 100%;
+  height: 100%;
   z-index: 5;
 }
 
@@ -307,7 +316,8 @@ footer {
     width: 100%;
   }
   .nav_box_mobile {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
   }
 }
 

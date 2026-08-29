@@ -76,24 +76,25 @@
         <h3><a class="mobile_home_gallery_title" href="available.html">Available Horses</a></h3>
         <div id="full_available_list">
           <img src="availablePages/swaythejury_files/side.jpg" href="availablePages/swaythejury.html"
-            horse_title="SWAY THE JURY 2022, 15.3 h., dark bay gelding">
+            horse_title="SWAY THE JURY 2022, 15.3h, dark bay gelding">
           <img src="availablePages/addysonsdream_files/Addysons-Deam-left-300x224_vA5T.jpg"
             href="availablePages/addysonsdream.html" horse_title="ADDYSON'S DREAM, 2021, 16.3h, bay
                 gelding">
         </div>
-        <div class="large_image_wrapper">
-          <span class="prev_image" onclick="prevImage()">
-            &lt;
-          </span>
-          <a id="avail_gallery_outer" style="display: flex">
-            <img id="mobile_home_gallery_display" class="snippet_thumb mobile_home_gallery" src="">
-            <p id="mobile_home_gallery_text"></p>
-          </a>
-          <span class="next_image" onclick="nextImage()">
-            &gt;
-          </span>
-        </div>
       </div>
+      <div class="large_image_wrapper mobile_large_image_wrapper">
+        <span class="prev_image" onclick="prevImage()">
+          &lt;
+        </span>
+        <a id="avail_gallery_outer" style="display: grid; grid-template-columns: 1fr 1fr;">
+          <img id="mobile_home_gallery_display" class="mobile_home_gallery" src="">
+          <p id="mobile_home_gallery_text"></p>
+        </a>
+        <span class="next_image" onclick="nextImage()">
+          &gt;
+        </span>
+      </div>
+
     </div>
     <hr>
   </header>
