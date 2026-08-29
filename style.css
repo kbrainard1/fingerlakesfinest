@@ -1,5 +1,10 @@
 /* Site-wide look-and-feel */
 
+:root {
+    --site-dark-blue: rgb(0,0,150);
+    --site-light-blue: rgb(0,0,200);
+}
+
 body {
   margin: 5% 10%;
   background-color: white;
@@ -19,11 +24,11 @@ p, ul {
 }
 
 hr {
-  color:blue
+  color: var(--site-light-blue);
 }
 
 h1 {
-  color: navy;
+  color: var(--site-dark-blue);
 }
 
 /* End Site-wide look-and-feel */
@@ -228,16 +233,12 @@ footer {
   width: 100%;
   height: 7px;
   border-radius: 3px;
-  background-color: #f8982b;
+  background-color: var(--site-dark-blue);
   margin-top: 8px;
   transition: all 0.3s ease-in-out;
 }
 
-
-/**
-Nav Styles
-**/
-.nav {
+.ham_nav {
   width: 50%;
   height: 100%;
   background-color: lightgray;
@@ -249,45 +250,56 @@ Nav Styles
   display: none;
 }
 
-/**
-Animations
-**/
-#toggle:checked + .hamburger .top-bun {
-  transform: rotate(-45deg);
-  margin-top: 25px;
-}
-#toggle:checked + .hamburger .bottom-bun {
-  opacity: 0;
-}
-#toggle:checked + .hamburger .meat {
-  transform: rotate(45deg);
-  margin-top: -7px;
-}
-
-#toggle:checked + .hamburger + .nav {
+#toggle:checked + .hamburger + .ham_nav {
   display:contents;
 }
 
 .nav_mobile {
-  margin: auto;
-  max-width: 800px;
+  padding-left: 15%;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.nav_mobile_inner {
+  background-color: #DDDDDD;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 5px;
 }
 
-.nav_link {
-  margin-top: 5px;
-  text-decoration: none;
-  padding: 5px;
-  font-size: large;
-  color: black;
+.nav_mobile_inner a {
+  margin-top: 0px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .nav_box {
     display: none;
+  }
+  .recent_adds {
+    display: none;
+  }
+  .home_content {
+    width: 100%;
   }
   .nav_box_mobile {
     display: flex;
   }
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .htop {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .hbottom {
+  opacity: 0;
+}
+#toggle:checked + .hamburger .hmid {
+  transform: rotate(45deg);
+  margin-top: -7px;
 }
