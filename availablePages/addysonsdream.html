@@ -15,7 +15,7 @@
 			<img src="../images/logo.jpg" alt="Finger Lakes Finest Thoroughbreds Inc" class="logo">
 		</div>
 		<div class="nav_box">
-			<nav>
+			<nav class="nav_normal">
 				<a href="../index.html">Home</a>
 				<a href="../howtobuy.html">How to Buy</a>
 				<a href="../available.html">Available Horses</a>
@@ -24,6 +24,29 @@
 				<a href="../donate.html">Donate</a>
 				<a href="../contact.html">Contact Us</a>
 			</nav>
+		</div>
+		<div class="nav_box_mobile">
+			<input id="toggle" type="checkbox"></input>
+
+			<label for="toggle" class="hamburger">
+				<div class="htop"></div>
+				<div class="hmid"></div>
+				<div class="hbottom"></div>
+			</label>
+
+			<div class="ham_nav">
+				<nav class="nav_mobile">
+					<div class="nav_mobile_inner">
+						<a href="../index.html">Home</a>
+						<a href="../howtobuy.html">How to Buy</a>
+						<a href="../available.html">Available Horses</a>
+						<a href="../placed.html">Placed Horses</a>
+						<a href="../resources.html">Resources</a>
+						<a href="../donate.html">Donate</a>
+						<a href="../contact.html">Contact Us</a>
+					</div>
+				</nav>
+			</div>
 		</div>
 		<hr>
 	</header>
@@ -85,25 +108,30 @@
 		<p>Pedigree:&nbsp;<a rel="noreferrer noopener" href="https://www.pedigreequery.com/addysons+dream"
 				target="_blank">https://www.pedigreequery.com/addysons+dream</a></p>
 
-		<div id="imageGallery">
-			<img class="gallery" src="addysonsdream_files/Addysons-Dream-face-225x300_vA5T.jpg"
-				full_size="addysonsdream_files/Addysons-Dream-face_vA5T.jpg" onclick="displayFullSize(0)">
-			<img class="gallery" src="addysonsdream_files/Addysons-Deam-left-300x224_vA5T.jpg"
-				full_size="addysonsdream_files/Addysons-Deam-left_vA5T.jpg" onclick="displayFullSize(1)">
-			<img class="gallery" src="addysonsdream_files/Addysons-Dream-right-300x227_vA5T.jpg"
-				full_size="addysonsdream_files/Addysons-Dream-right_vA5T.jpg" onclick="displayFullSize(2)">
-			<img class="gallery" src="addysonsdream_files/Addysons-Dream-front-225x300_vA5T.jpg"
-				full_size="addysonsdream_files/Addysons-Dream-front_vA5T.jpg" onclick="displayFullSize(3)">
-			<img class="gallery" src="addysonsdream_files/Addysons-Dream-rear-166x300_vA5T.jpg"
-				full_size="addysonsdream_files/Addysons-Dream-rear_vA5T.jpg" onclick="displayFullSize(4)">
+		<div id="image_gallery_full">
+			<img src="addysonsdream_files/Addysons-Dream-face-225x300_vA5T.jpg"
+				full_size="addysonsdream_files/Addysons-Dream-face_vA5T.jpg">
+			<img src="addysonsdream_files/Addysons-Deam-left-300x224_vA5T.jpg"
+				full_size="addysonsdream_files/Addysons-Deam-left_vA5T.jpg">
+			<img src="addysonsdream_files/Addysons-Dream-right-300x227_vA5T.jpg"
+				full_size="addysonsdream_files/Addysons-Dream-right_vA5T.jpg">
+			<img src="addysonsdream_files/Addysons-Dream-front-225x300_vA5T.jpg"
+				full_size="addysonsdream_files/Addysons-Dream-front_vA5T.jpg">
+			<img src="addysonsdream_files/Addysons-Dream-rear-166x300_vA5T.jpg"
+				full_size="addysonsdream_files/Addysons-Dream-rear_vA5T.jpg">
 		</div>
 		<div class="large_image_wrapper">
-			<span class="prev_image inline hidden" onclick="prevImage()">
+			<span class="prev_image" onclick="prevImage()">
 				&lt;
 			</span>
-			<img id="fullSizeImage" src="" onload="resizeImage()">
-			<span class="next_image" onclick="nextImage()">&gt;</span>
+			<img id="prev_image_thumb" onclick="prevImage()">
+			<img id="curr_image_thumb">
+			<img id="next_image_thumb" onclick="nextImage()">
+			<span class="next_image" onclick="nextImage()">
+				&gt;
+			</span>
 		</div>
+		<img id="full_size_image" src="" onload="resizeImage()">
 
 		<div class="jog_video">
 			<iframe loading="lazy" title="Addyson’s Dream" width="50%"

@@ -123,6 +123,25 @@ footer {
   width: 75%;
 }
 
+#full_available_list {
+  display: none;
+}
+
+.mobile_home_gallery_text, #avail_gallery_outer, .mobile_home_gallery_title {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+}
+
+.mobile_home_gallery {
+  float: left;
+}
+
+#avail_gallery_outer {
+  display: flex;
+  margin-bottom: 5px;
+}
+
 .home_header {
 	font-style: italic;
 	font-size: 16pt;
@@ -145,50 +164,52 @@ footer {
   margin-bottom: 10px;
 }
 
+#image_gallery_full {
+  display: none;
+}
+
+#prev_image_thumb, #next_image_thumb {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#curr_image_thumb {
+  max-width: 150px;
+  max-height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 .large_image_wrapper {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 10px;
+  max-height: 150px;
 }
 
 .prev_image, .next_image { 
-  display: inline-block;
+  max-height: 150px;
   opacity: 100%;
-  font-size: 10vh;
-  padding-top: 35vh;
+  font-size: 40px;
+  padding-top: 40px;
   user-select: none;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.prev_image {
-  left: 0;
-}
-
-.next_image {
-  right: 0;
 }
 
 .prev_image:hover, .next_image:hover {
   opacity: 40%;
 }
 
-.inline { display: inline; }
-
-/* avoid display: none to still take up the same amount of flex space horizontally */
-.hidden{ color: white; opacity: 0%; user-select: none; }
-
-#fullSizeImage {
+#full_size_image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-#imageGallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .jog_video {
@@ -226,6 +247,7 @@ footer {
 
 .hamburger {
   width: 20%;
+  height: 20%;
   z-index: 5;
 }
 
@@ -286,6 +308,25 @@ footer {
   }
   .nav_box_mobile {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #next_image_thumb, #prev_image_thumb {
+    max-width: 75px;
+  }
+  #curr_image_thumb {
+    max-width: 125px;
+  }
+  .prev_image, .next_image {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+   #next_image_thumb, #prev_image_thumb {
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }
 

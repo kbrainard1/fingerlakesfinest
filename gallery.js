@@ -7,18 +7,35 @@ function displayFullSize(index) {
 
 function prevImage() {
     carouselIndex--;
+    carouselIndex = makeSafe(carouselIndex);
     displayImage();
 }
 
 function nextImage() {
     carouselIndex++;
+    carouselIndex = makeSafe(carouselIndex);
     displayImage();
 }
 
 function displayImage() {
-    checkBounds();
-    var nextImage = document.getElementById("imageGallery").children[carouselIndex].getAttribute("full_size");
-    document.getElementById("fullSizeImage").src = nextImage;
+    var fullGallery = document.getElementById("image_gallery_full");
+    var nextImage = fullGallery.children[carouselIndex].getAttribute("full_size");
+    document.getElementById("full_size_image").src = nextImage;
+    document.getElementById("prev_image_thumb").src = fullGallery.children[makeSafe(carouselIndex - 1)].getAttribute("src");
+    document.getElementById("curr_image_thumb").src = fullGallery.children[carouselIndex].getAttribute("src");
+    document.getElementById("next_image_thumb").src = fullGallery.children[makeSafe(carouselIndex + 1)].getAttribute("src");   
+    
+}
+
+function makeSafe(bound) {
+    var numChildren = document.getElementById("image_gallery_full").childElementCount;
+    if (bound < 0) {
+        return bound + numChildren;
+    }
+    if (bound >= numChildren) {
+        return bound - numChildren;
+    }
+    return bound;
 }
 
 // "Scale this image to at most 80% of the page in terms of width/height,
@@ -42,7 +59,7 @@ function resizeImage() {
     var smallWindowHeight = windowHeight * 0.8;
 
     // determine limiting dimension for image scaling
-    var image = document.getElementById("fullSizeImage")
+    var image = document.getElementById("full_size_image")
     const imageWidth = image.naturalWidth;
     const imageHeight = image.naturalHeight;
 
@@ -63,35 +80,4 @@ function resizeImage() {
     // update visible component dimensions
     image.style.width = adjustedWidth + "px";
     image.style.height = adjustedHeight + "px";
-
-    var prevImage = document.querySelector(".prev_image");
-    var nextImage = document.querySelector(".next_image");
-    prevImage.style.fontSize = (adjustedHeight * .1) + "px";
-    prevImage.style.paddingTop = (adjustedHeight * .45) + "px";
-    nextImage.style.fontSize = (adjustedHeight * .1) + "px";
-    nextImage.style.paddingTop = (adjustedHeight * .45) + "px";
-}
-
-function checkBounds() {
-    var numChildren = document.getElementById("imageGallery").childElementCount;
-    if (carouselIndex <= 0) {
-        hide("prev_image");
-        carouselIndex = 0;
-    } else {
-        show("prev_image");
-    }
-    if (carouselIndex >= numChildren - 1) {
-        hide("next_image");
-        carouselIndex = numChildren - 1;
-    } else {
-        show("next_image");
-    }
-}
-
-function hide(elemClass) {
-    document.querySelector("." + elemClass).className = elemClass + " inline hidden";
-}
-
-function show(elemClass) {
-    document.querySelector("." + elemClass).className = elemClass;
 }
