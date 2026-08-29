@@ -123,6 +123,11 @@ footer {
   width: 75%;
 }
 
+.available_snippet_div {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
 #full_available_list {
   display: none;
 }
