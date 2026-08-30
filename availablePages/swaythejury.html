@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body onresize="resizeImage()" onload="displayImage()">
+<body onresize="resizeImage()" onload="drawGallery()">
     <header>
         <div class="logo_box">
             <img src="../images/logo.jpg" alt="Finger Lakes Finest Thoroughbreds Inc" class="logo">
@@ -114,31 +114,24 @@
                 target="_blank">https://www.pedigreequery.com/sway+the+jury</a></p>
 
         <div id="image_gallery_full">
-            <img class="gallery" src="swaythejury_files/side.jpg" full_size="swaythejury_files/side.jpg"
-                onclick="displayFullSize(0)">
-            <img class="gallery" src="swaythejury_files/side2.jpg" full_size="swaythejury_files/side2.jpg"
-                onclick="displayFullSize(1)">
-            <img class="gallery" src="swaythejury_files/face.jpg" full_size="swaythejury_files/face.jpg"
-                onclick="displayFullSize(2)">
-            <img class="gallery" src="swaythejury_files/face2.jpg" full_size="swaythejury_files/face2.jpg"
-                onclick="displayFullSize(3)">
-            <img class="gallery" src="swaythejury_files/front.jpg" full_size="swaythejury_files/front.jpg"
-                onclick="displayFullSize(4)">
-            <img class="gallery" src="swaythejury_files/rear.jpg" full_size="swaythejury_files/rear.jpg"
-                onclick="displayFullSize(5)">
+            <img src="swaythejury_files/side.jpg" full_size="swaythejury_files/side.jpg">
+            <img src="swaythejury_files/side2.jpg" full_size="swaythejury_files/side2.jpg">
+            <img src="swaythejury_files/face.jpg" full_size="swaythejury_files/face.jpg">
+            <img src="swaythejury_files/face2.jpg" full_size="swaythejury_files/face2.jpg">
+            <img src="swaythejury_files/front.jpg" full_size="swaythejury_files/front.jpg">
+            <img src="swaythejury_files/rear.jpg" full_size="swaythejury_files/rear.jpg">
         </div>
-		<div class="large_image_wrapper">
-			<span class="prev_image" onclick="prevImage()">
-				&lt;
-			</span>
-			<img id="prev_image_thumb" onclick="prevImage()">
-			<img id="curr_image_thumb">
-			<img id="next_image_thumb" onclick="nextImage()">
-			<span class="next_image" onclick="nextImage()">
-				&gt;
-			</span>
-		</div>
-		<img id="full_size_image" src="" onload="resizeImage()">
+        <div class="large_image_wrapper">
+            <span class="prev_image" onclick="prevImage()">
+                &lt;
+            </span>
+            <img id="full_size_image" src="" onload="resizeImage()">
+            <span class="next_image" onclick="nextImage()">
+                &gt;
+            </span>
+        </div>
+        <div id="gallery_dot_progress">
+        </div>
 
 
         <div class="jog_video">

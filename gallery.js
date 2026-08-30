@@ -1,5 +1,16 @@
 var carouselIndex = 0;
 
+function drawGallery() {
+    var dotDiv = document.getElementById("gallery_dot_progress");
+    var limit = document.getElementById("image_gallery_full").childElementCount
+    for (let i = 0; i < limit; i++) {
+        var newDot = document.createElement("div");
+        newDot.className = "gallery_dot";
+        dotDiv.appendChild(newDot);
+    }
+    displayImage();
+}
+
 function displayFullSize(index) {
     carouselIndex = index;
     displayImage();
@@ -21,10 +32,11 @@ function displayImage() {
     var fullGallery = document.getElementById("image_gallery_full");
     var nextImage = fullGallery.children[carouselIndex].getAttribute("full_size");
     document.getElementById("full_size_image").src = nextImage;
-    document.getElementById("prev_image_thumb").src = fullGallery.children[makeSafe(carouselIndex - 1)].getAttribute("src");
-    document.getElementById("curr_image_thumb").src = fullGallery.children[carouselIndex].getAttribute("src");
-    document.getElementById("next_image_thumb").src = fullGallery.children[makeSafe(carouselIndex + 1)].getAttribute("src");   
-    
+    var dotProgress = document.getElementById("gallery_dot_progress");
+    for (let i = 0; i < dotProgress.childElementCount; i++) {
+        dotProgress.children[i].style = "background-color: lightgrey;";
+    }
+    dotProgress.children[carouselIndex].style = "background-color: darkgrey;";
 }
 
 function makeSafe(bound) {
@@ -80,4 +92,11 @@ function resizeImage() {
     // update visible component dimensions
     image.style.width = adjustedWidth + "px";
     image.style.height = adjustedHeight + "px";
+
+    var prevImage = document.querySelector(".prev_image");
+    var nextImage = document.querySelector(".next_image");
+    prevImage.style.fontSize = (adjustedHeight * .1) + "px";
+    prevImage.style.paddingTop = (adjustedHeight * .45) + "px";
+    nextImage.style.fontSize = (adjustedHeight * .1) + "px";
+    nextImage.style.paddingTop = (adjustedHeight * .45) + "px";
 }

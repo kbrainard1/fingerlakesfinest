@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="../style.css">
 </head>
 
-<body onresize="resizeImage()" onload="displayImage()">
+<body onresize="resizeImage()" onload="drawGallery()">
 	<header>
 		<div class="logo_box">
 			<img src="../images/logo.jpg" alt="Finger Lakes Finest Thoroughbreds Inc" class="logo">
@@ -124,14 +124,14 @@
 			<span class="prev_image" onclick="prevImage()">
 				&lt;
 			</span>
-			<img id="prev_image_thumb" onclick="prevImage()">
-			<img id="curr_image_thumb">
-			<img id="next_image_thumb" onclick="nextImage()">
+			<img id="full_size_image" src="" onload="resizeImage()">
 			<span class="next_image" onclick="nextImage()">
 				&gt;
 			</span>
 		</div>
-		<img id="full_size_image" src="" onload="resizeImage()">
+		<div id="gallery_dot_progress">
+		</div>
+
 
 		<div class="jog_video">
 			<iframe loading="lazy" title="Addyson’s Dream" width="50%"

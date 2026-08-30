@@ -1,22 +1,23 @@
 /* Site-wide look-and-feel */
 
 :root {
-    --site-dark-blue: rgb(0,0,150);
-    --site-light-blue: rgb(0,0,200);
+  --site-dark-blue: rgb(0, 0, 150);
+  --site-light-blue: rgb(0, 0, 200);
 }
 
 body {
   margin: 5% 10%;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
-   font-weight: lighter;
+  font-weight: lighter;
 }
 
 main {
   padding: 10px;
 }
 
-p, ul {
+p,
+ul {
   line-height: 1.5;
   font-size: 12pt;
   font-weight: lighter;
@@ -36,15 +37,15 @@ h1 {
 /* Header formatting */
 
 .logo_box {
- width: 90%;
- background-color: white;
+  width: 90%;
+  background-color: white;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .logo {
-	width: 100%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -65,6 +66,7 @@ nav .active {
   background-color: lightgrey;
   text-decoration: bold;
 }
+
 nav a:hover {
   background-color: white;
 }
@@ -78,15 +80,15 @@ nav a:hover {
 }
 
 .nav_box {
-	display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-	width: 90%;
-	background-color: white;
+  width: 90%;
+  background-color: white;
 }
 
 header {
-  text-align: center; 
+  text-align: center;
 }
 
 /* End Header Formatting */
@@ -105,8 +107,8 @@ footer {
 }
 
 .footer_text {
-	font-size: 10pt;
-	margin: 5px;
+  font-size: 10pt;
+  margin: 5px;
 }
 
 /* End Footer Formatting */
@@ -116,7 +118,7 @@ footer {
 /* Home */
 
 .home_main {
-   display: flex;
+  display: flex;
 }
 
 .home_content {
@@ -132,7 +134,8 @@ footer {
   display: none;
 }
 
-#avail_gallery_outer, .mobile_home_gallery_title {
+#avail_gallery_outer,
+.mobile_home_gallery_title {
   text-decoration: none;
   padding: 5px;
   color: black;
@@ -143,7 +146,7 @@ footer {
 }
 
 .mobile_large_image_wrapper {
- grid-column: 1 / 3;
+  grid-column: 1 / 3;
 }
 
 .mobile_home_gallery {
@@ -158,8 +161,8 @@ footer {
 }
 
 .home_header {
-	font-style: italic;
-	font-size: 16pt;
+  font-style: italic;
+  font-size: 16pt;
 }
 
 /* Donate */
@@ -170,45 +173,35 @@ footer {
 
 /* Individual horse pages */
 
-.gallery {
-  max-width: 100px;
-  max-height: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 #image_gallery_full {
   display: none;
 }
 
-#prev_image_thumb, #next_image_thumb {
-  max-width: 100px;
-  max-height: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.gallery_dot {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: lightgray;
+  border: 1px solid darkgray;
 }
 
-#curr_image_thumb {
-  max-width: 150px;
-  max-height: 150px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+#gallery_dot_progress {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
-
 
 .large_image_wrapper {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   margin-bottom: 10px;
-  max-height: 150px;
 }
 
-.prev_image, .next_image { 
+.prev_image,
+.next_image {
   max-height: 150px;
   opacity: 100%;
   font-size: 40px;
@@ -216,7 +209,8 @@ footer {
   user-select: none;
 }
 
-.prev_image:hover, .next_image:hover {
+.prev_image:hover,
+.next_image:hover {
   opacity: 40%;
 }
 
@@ -228,8 +222,8 @@ footer {
 }
 
 .jog_video {
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Available/Placed horses list pages */
@@ -254,10 +248,10 @@ footer {
 
 
 .nav_box_mobile {
-	display: none;
+  display: none;
   margin-left: auto;
   margin-right: auto;
-	width: 90%;
+  width: 90%;
 }
 
 .hamburger {
@@ -287,8 +281,8 @@ footer {
   display: none;
 }
 
-#toggle:checked + .hamburger + .ham_nav {
-  display:contents;
+#toggle:checked+.hamburger+.ham_nav {
+  display: contents;
 }
 
 .nav_mobile {
@@ -315,12 +309,15 @@ footer {
   .nav_box {
     display: none;
   }
+
   .recent_adds {
     display: none;
   }
+
   .home_content {
     width: 100%;
   }
+
   .nav_box_mobile {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -328,19 +325,26 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-  #next_image_thumb, #prev_image_thumb {
+
+  #next_image_thumb,
+  #prev_image_thumb {
     max-width: 75px;
   }
+
   #curr_image_thumb {
     max-width: 125px;
   }
-  .prev_image, .next_image {
+
+  .prev_image,
+  .next_image {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 360px) {
-   #next_image_thumb, #prev_image_thumb {
+
+  #next_image_thumb,
+  #prev_image_thumb {
     margin-left: 2px;
     margin-right: 2px;
   }
@@ -349,14 +353,16 @@ footer {
 /**
 Animations
 **/
-#toggle:checked + .hamburger .htop {
+#toggle:checked+.hamburger .htop {
   transform: rotate(-45deg);
   margin-top: 25px;
 }
-#toggle:checked + .hamburger .hbottom {
+
+#toggle:checked+.hamburger .hbottom {
   opacity: 0;
 }
-#toggle:checked + .hamburger .hmid {
+
+#toggle:checked+.hamburger .hmid {
   transform: rotate(45deg);
   margin-top: -7px;
 }
