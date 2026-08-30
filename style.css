@@ -129,11 +129,18 @@ footer {
   display: none;
 }
 
-#avail_gallery_outer,
-.mobile_home_gallery_title {
+#avail_gallery_outer {
   text-decoration: none;
   padding: 5px;
   color: black;
+}
+
+.mobile_home_gallery_title {
+  text-decoration: none;
+  padding: 5px;
+  color: var(--site-dark-blue);
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #mobile_home_gallery_text {
@@ -220,9 +227,14 @@ footer {
 .jog_video {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 /* Available/Placed horses list pages */
+
+.available_snippet_div {
+  margin-top: 25px;
+}
 
 .available_snippet_inner_div {
   display: flex;
