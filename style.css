@@ -125,11 +125,6 @@ footer {
   width: 75%;
 }
 
-.available_snippet_div {
-  margin-top: 5px;
-  margin-bottom: 30px;
-}
-
 #full_available_list {
   display: none;
 }
@@ -149,15 +144,16 @@ footer {
   grid-column: 1 / 3;
 }
 
-.mobile_home_gallery {
+#mobile_home_gallery_display {
   float: left;
   max-width: 40vw;
   max-height: 100px;
 }
 
 #avail_gallery_outer {
-  display: flex;
   margin-bottom: 5px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
 }
 
 .home_header {

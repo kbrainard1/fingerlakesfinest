@@ -9,7 +9,6 @@ function drawGallery() {
         dotDiv.appendChild(newDot);
     }
 
-
     var width = document.querySelector(".nav_box_mobile").width;
     var remainingWidth = width - (limit * 20);
     dotDiv.style = "margin-left: " + (remainingWidth / 2) + "px; grid-column: 1 / 3;";
