@@ -325,28 +325,9 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-
-  #next_image_thumb,
-  #prev_image_thumb {
-    max-width: 75px;
-  }
-
-  #curr_image_thumb {
-    max-width: 125px;
-  }
-
   .prev_image,
   .next_image {
     font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-
-  #next_image_thumb,
-  #prev_image_thumb {
-    margin-left: 2px;
-    margin-right: 2px;
   }
 }
 
