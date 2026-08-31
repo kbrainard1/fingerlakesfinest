@@ -30,6 +30,7 @@ hr {
 
 h1 {
   color: var(--site-dark-blue);
+  margin-top: 0px;
 }
 
 /* End Site-wide look-and-feel */
@@ -159,7 +160,7 @@ footer {
 
 #avail_gallery_outer {
   margin-bottom: 5px;
-  display: grid; 
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -338,28 +339,36 @@ footer {
     display: grid;
     grid-template-columns: 1fr 6fr;
   }
-}
 
-@media screen and (max-width: 450px) {
-  .prev_image,
-  .next_image {
-    font-size: 30px;
+  h1 {
+    font-size: 18pt;
   }
-}
 
-/**
+  .home_header {
+    font-size: 14pt;
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .prev_image,
+    .next_image {
+      font-size: 30px;
+    }
+  }
+
+  /**
 Animations
 **/
-#toggle:checked+.hamburger .htop {
-  transform: rotate(-45deg);
-  margin-top: 25px;
-}
+  #toggle:checked+.hamburger .htop {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
 
-#toggle:checked+.hamburger .hbottom {
-  opacity: 0;
-}
+  #toggle:checked+.hamburger .hbottom {
+    opacity: 0;
+  }
 
-#toggle:checked+.hamburger .hmid {
-  transform: rotate(45deg);
-  margin-top: -7px;
-}
+  #toggle:checked+.hamburger .hmid {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
