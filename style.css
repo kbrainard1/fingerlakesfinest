@@ -176,6 +176,14 @@ footer {
 
 /* Individual horse pages */
 
+.listing_thumb {
+  max-width: 20%;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+
+}
+
 #image_gallery_full {
   display: none;
 }
