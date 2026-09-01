@@ -4,12 +4,11 @@ This is NOT the official site - we are mid-migration. Not all data is fully migr
 
 To add a listing:
 
-- Ask Katherine for the CreateListing script (currently: Java saved locally that runs on a checkout; eventual: javascript that uses the GH api)
-- Run the script on the text of the facebook post up to but not including the links to race record, etc
-- Save images from post using standard naming scheme (side, front, rear)
-- Manual additions: any additional photos go in the photos list div, race record and pedigree links go in those <a> tags, and video(s) need to be converted to embeddable iframes and then added to the jog_video div (or divs, if multiple videos)
-- index & available.html are all automated, unless you don't want this listing to be at the top of the list, then you'll need to adjust the ordering
-- Commit *and push* all changes to Github (recommended: check what it looks like locally first, this auto-updates the site)
+- Ask Katherine for the CreateListing script
+- Save images from post in allonewordlowercasename_files. Important: the image to use for the horse's main profile pic should be named "side.jpg" (typically you want to use a side view)
+- Run the script on the full text of the facebook post
+- Any videos that are shorts need to be converted to embeddable iframes and then added to the jog_video div (or divs, if multiple videos) - regular videos are auto-added
+- Commit *and push* all changes to Github (recommended: check what it looks like locally first)
 
 To mark a listing as placed:
 
@@ -18,11 +17,7 @@ To mark a listing as placed:
 - Add to placed.html (probably cut and paste from available)
 - Optional: move horse-specific files from available to placed and update paths. Only needed as a long-term housekeeping thing, does not affect how the site displays.
 
-Top TODOs:
-
-- Investigate FB api to automate getting the text & photos
-- Convert script to use the GH API instead of a local checkout
-- Convert script to js in the repo
-- Add a small frontend for the script
-- Add tooling for marking a listing as placed
-- Backfill older data
+TODO:
+- Add a frontend to the script
+- Store a compiled applet in an admin branch
+- Automate marking a listing as placed
