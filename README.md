@@ -4,9 +4,8 @@ This is NOT the official site - we are mid-migration. Not all data is fully migr
 
 To add a listing:
 
-- Ask Katherine for the CreateListing script
-- Save images from post in allonewordlowercasename_files. Important: the image to use for the horse's main profile pic should be named "side.jpg" (typically you want to use a side view)
-- Run the script on the full text of the facebook post
+- Ask Katherine for the CreateListing app
+- Run the app, add the text of the fb post and the images to the relevant sections. Choose which photo should be the profile pic for the horse
 - Any videos that are shorts need to be converted to embeddable iframes and then added to the jog_video div (or divs, if multiple videos) - regular videos are auto-added
 - Commit *and push* all changes to Github (recommended: check what it looks like locally first)
 
@@ -18,6 +17,5 @@ To mark a listing as placed:
 - Optional: move horse-specific files from available to placed and update paths. Only needed as a long-term housekeeping thing, does not affect how the site displays.
 
 TODO:
-- Add a frontend to the script
-- Store a compiled applet in an admin branch
+- Store a compiled applet in an admin branch, or other easy shipping solution
 - Automate marking a listing as placed
