@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>CAPO DA MONTE | Finger Lakes Finest Thoroughbreds, Inc</title>
+</head>
+
+<body onresize="resizeImage()" onload="drawGallery()">
+    <header>
+        <div class="logo_box">
+            <img src="../images/logo.jpg" alt="Finger Lakes Finest Thoroughbreds Inc" class="logo">
+        </div>
+        <div class="nav_box">
+            <nav class="nav_normal">
+                <a href="../index.html">Home</a>
+                <a href="../howtobuy.html">How to Buy</a>
+                <a href="../available.html">Available Horses</a>
+                <a href="../placed.html">Placed Horses</a>
+                <a href="../resources.html">Resources</a>
+                <a href="../donate.html">Donate</a>
+                <a href="../contact.html">Contact Us</a>
+            </nav>
+        </div>
+        <div class="nav_box_mobile">
+            <input id="toggle" type="checkbox">
+
+            <label for="toggle" class="hamburger">
+                <div class="htop"></div>
+                <div class="hmid"></div>
+                <div class="hbottom"></div>
+            </label>
+
+            <div class="ham_nav">
+                <nav class="nav_mobile">
+                    <div class="nav_mobile_inner">
+                        <a href="../index.html">Home</a>
+                        <a href="../howtobuy.html">How to Buy</a>
+                        <a href="../available.html">Available Horses</a>
+                        <a href="../placed.html">Placed Horses</a>
+                        <a href="../resources.html">Resources</a>
+                        <a href="../donate.html">Donate</a>
+                        <a href="../contact.html">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <img class="listing_thumb" src="capodamonte_files/profile.jpg">
+        <h1>CAPO DA MONTE, 2023, 15.3 h., ch m. </h1>
+        <p>Located at the Finger Lakes Race Track in Farmington, NY (near Rochester, NY). </p>
+        <p>If a sweet chestnut filly is your type, look no further. Capo Da Monte is lightly raced with only 3 starts.
+            She reportedly came to her current trainer underweight but has since put on over 100lbs in the past 2
+            months. She is reported to have no vices and to be an absolute love in her stall.</p>
+        <p>Capo is reported to simply not have the capacity for racing. A couple of her races had her in the
+            second-place slot, until she just lost interest and faded to the back. She has a lot of energy and can get
+            stressed in certain situations. This presents itself as jigging and sweating. The track life might simply be
+            too much for this sweetheart. But even still she is reported to be good to ride and to have no previous
+            injuries.</p>
+        <p>Capo was very well behaved for us volunteers. She greatly enjoyed the attention and the scritches given
+            during her photo shoot. She presented a nice easy trot on a loose lead. </p>
+        <p>Capo is by Capo Kane who boasts lines from Street Sense and Hard Spun, thus likely inheriting their excellent
+            brains and athleticism. She is out of a He’s Had Enough mare with Tapit and Dixieland Band lines, ensuring
+            she will definitely have a ton of personality! This sweet girl is ready for life off the racetrack- don’t
+            let her get away!</p>
+        <p>Price: $1,500 neg </p>
+        <p>Contact: Dylan Clarke (352) 286-7559</p>
+        <p>A PPE is always recommended. For information about vet practices available to do PPEs, and other important
+            information about the buying process, please see the How to Buy menu tab on our website, which is linked in
+            the post pinned to the top of our FB page.</p>
+        <p><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&amp;refno=11315298&amp;registry=T"
+                target="_blank" rel="noreferrer noopener">Race Record</a></p>
+        <p><a rel="noreferrer noopener" href="https://www.pedigreequery.com/capo+da+monte" target="_blank">Pedigree</a>
+        </p>
+        <div id="image_gallery_full">
+                            <img src="capodamonte_files/h2.jpg"
+                full_size="capodamonte_files/h2.jpg">
+                <img src="capodamonte_files/h1.jpg"
+                full_size="capodamonte_files/h1.jpg">
+                                <img src="capodamonte_files/h4.jpg"
+                full_size="capodamonte_files/h4.jpg">
+                <img src="capodamonte_files/h3.jpg"
+                full_size="capodamonte_files/h3.jpg">
+            <img src="capodamonte_files/h9.jpg" full_size="capodamonte_files/h9.jpg"><img src="capodamonte_files/h8.jpg"
+                full_size="capodamonte_files/h8.jpg">
+                <img src="capodamonte_files/h7.jpg"
+                full_size="capodamonte_files/h7.jpg">
+                <img src="capodamonte_files/h6.jpg"
+                full_size="capodamonte_files/h6.jpg">
+                <img src="capodamonte_files/h5.jpg"
+                full_size="capodamonte_files/h5.jpg">
+        </div>
+        <div class="large_image_wrapper">
+            <span class="prev_image" onclick="prevImage()">
+                &lt;
+            </span>
+            <img id="full_size_image" src="" onload="resizeImage()">
+            <span class="next_image" onclick="nextImage()">
+                &gt;
+            </span>
+        </div>
+        <div id="gallery_dot_progress">
+        </div>
+        <div class="jog_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wh4bciS5K-8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+        <!-- Video Section-->
+    </main>
+    <footer>
+        <hr>
+        <div class="footer_logo">
+            <img src="../images/fb_logo.jpg" alt="Finger Lakes Finest Logo" class="footer_logo">
+        </div>
+        <p class="footer_text"><a href="mailto:fingerlakesfinest@gmail.com">fingerlakesfinest@gmail.com</a></p>
+        <a href="https://www.facebook.com/fingerlakesfinesttbs">
+            <img src="../images/facebook.gif">
+        </a>
+    </footer>
+    <script src="../gallery.js"></script>
+</body>
+
+</html>
