@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>IRON MAN IRA | Finger Lakes Finest Thoroughbreds, Inc</title>
+</head>
+
+<body onresize="resizeImage()" onload="drawGallery()">
+    <header>
+        <div class="logo_box">
+            <img src="../images/logo.jpg" alt="Finger Lakes Finest Thoroughbreds Inc" class="logo">
+        </div>
+        <div class="nav_box">
+            <nav class="nav_normal">
+                <a href="../index.html">Home</a>
+                <a href="../howtobuy.html">How to Buy</a>
+                <a href="../available.html">Available Horses</a>
+                <a href="../placed.html">Placed Horses</a>
+                <a href="../resources.html">Resources</a>
+                <a href="../donate.html">Donate</a>
+                <a href="../contact.html">Contact Us</a>
+            </nav>
+        </div>
+        <div class="nav_box_mobile">
+            <input id="toggle" type="checkbox">
+
+            <label for="toggle" class="hamburger">
+                <div class="htop"></div>
+                <div class="hmid"></div>
+                <div class="hbottom"></div>
+            </label>
+
+            <div class="ham_nav">
+                <nav class="nav_mobile">
+                    <div class="nav_mobile_inner">
+                        <a href="../index.html">Home</a>
+                        <a href="../howtobuy.html">How to Buy</a>
+                        <a href="../available.html">Available Horses</a>
+                        <a href="../placed.html">Placed Horses</a>
+                        <a href="../resources.html">Resources</a>
+                        <a href="../donate.html">Donate</a>
+                        <a href="../contact.html">Contact Us</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <img class="listing_thumb" src="ironmanira_files/profile.jpg">
+        <h1>IRON MAN IRA, 2021, 16.2+ h., bay g. </h1>
+        <p>Located at the Finger Lakes Race Track in Farmington, NY (near
+            Rochester, NY).</p>
+        <p>We were wowed by this handsome beefcake of a horse- one of our volunteers even described him as a “stupidly
+            beautiful creature”. He’s gorgeous... and he knows it too. He is a solidly built, muscular horse, with depth
+            through his heart girth, width through the chest, and with powerful hindquarters. He’s well balanced and
+            appears to be a big, strong, and athletic.</p>
+        <p>We were told that he is generally a good egg to work around and is “tremendous” to ride. We were not informed
+            of any vices or issues. His trainer said that he is simultaneously his favorite in the barn but is also
+            frustrating in that he has so much potential- running like a superstar in training or for the start of a
+            race, but failing to translate that to chalk up a recent win. But he has had a respectable career as a
+            racehorse earning $128K in his 28 starts.</p>
+        <p>In the photos and video, you may notice a mish-mosh of shoes (or no shoes) on his feet…he is missing the LF
+            and has a glue-on one on his right. His trainer is also his farrier and unfortunately was on crutches and
+            therefore unable to do the traditional nail on shoes during Ira’s last reset. But this did not affect his
+            jog video at all! Ira moved off displaying much spring, loft, and suspension. We were told that being
+            barefoot hasn’t bothered him either. We observed a balanced, athletic, and clever horse who was affectionate
+            with his trainer and also quietly grazed after his jog video.</p>
+        <p>This big, confident, and personable horse has some sport lineage chops too. He is by Laoban (a son of Uncle
+            Mo) and out of a Graeme Hall mare. Blushing Groom and Gone West also appear in his pedigree.</p>
+        <p>Please note that references will be required and checked prior to being able to purchase this horse. Please
+            see our post for more information.</p>
+        <p>Price: $3,000, neg.</p>
+        <p>Contact: Dylan Clarke (352) 286-7559</p>
+        <p>A PPE is always recommended. For information about vet practices available to do PPEs, and other important
+            information about the buying process, please see the How to Buy menu tab on our website, which is linked in
+            the post pinned to the top of our FB page</p>
+        <p><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&amp;refno=10986453&amp;registry=T"
+                target="_blank" rel="noreferrer noopener">Race Record</a></p>
+        <p><a rel="noreferrer noopener" href="https://www.pedigreequery.com/iron+man+ira" target="_blank">Pedigree</a>
+        </p>
+        <div id="image_gallery_full">
+            <img src="ironmanira_files/h6.jpg" full_size="ironmanira_files/h6.jpg"><img src="ironmanira_files/h5.jpg"
+                full_size="ironmanira_files/h5.jpg"><img src="ironmanira_files/h4.jpg"
+                full_size="ironmanira_files/h4.jpg"><img src="ironmanira_files/h3.jpg"
+                full_size="ironmanira_files/h3.jpg"><img src="ironmanira_files/h2.jpg"
+                full_size="ironmanira_files/h2.jpg"><img src="ironmanira_files/h1.jpg"
+                full_size="ironmanira_files/h1.jpg">
+        </div>
+        <div class="large_image_wrapper">
+            <span class="prev_image" onclick="prevImage()">
+                &lt;
+            </span>
+            <img id="full_size_image" src="" onload="resizeImage()">
+            <span class="next_image" onclick="nextImage()">
+                &gt;
+            </span>
+        </div>
+        <div id="gallery_dot_progress">
+        </div>
+        <div class="jog_video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/D2JDykUr9RI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+        <!-- Video Section-->
+    </main>
+    <footer>
+        <hr>
+        <div class="footer_logo">
+            <img src="../images/fb_logo.jpg" alt="Finger Lakes Finest Logo" class="footer_logo">
+        </div>
+        <p class="footer_text"><a href="mailto:fingerlakesfinest@gmail.com">fingerlakesfinest@gmail.com</a></p>
+        <a href="https://www.facebook.com/fingerlakesfinesttbs">
+            <img src="../images/facebook.gif">
+        </a>
+    </footer>
+    <script src="../gallery.js"></script>
+</body>
+
+</html>
