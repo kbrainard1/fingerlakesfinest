@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <title>Classical | Finger Lakes Finest Thoroughbreds, Inc</title>
+    </head>
+    <body onresize="resizeImage()" onload="drawGallery()">
+        <header>
+            <div class="logo_box">
+                <img src="../images/logo.jpg" alt="Finger Lakes Finest Thoroughbreds Inc" class="logo">
+            </div>
+            <div class="nav_box">
+                <nav class="nav_normal">
+                    <a href="../index.html">Home</a>
+                    <a href="../howtobuy.html">How to Buy</a>
+                    <a href="../available.html">Available Horses</a>
+                    <a href="../placed.html">Placed Horses</a>
+                    <a href="../resources.html">Resources</a>
+                    <a href="../donate.html">Donate</a>
+                    <a href="../contact.html">Contact Us</a>
+                </nav>
+            </div>
+            <div class="nav_box_mobile">
+                <input id="toggle" type="checkbox">
+                <label for="toggle" class="hamburger">
+                    <div class="htop"></div>
+                    <div class="hmid"></div>
+                    <div class="hbottom"></div>
+                </label>
+                <div class="ham_nav">
+                    <nav class="nav_mobile">
+                        <div class="nav_mobile_inner">
+                            <a href="../index.html">Home</a>
+                            <a href="../howtobuy.html">How to Buy</a>
+                            <a href="../available.html">Available Horses</a>
+                            <a href="../placed.html">Placed Horses</a>
+                            <a href="../resources.html">Resources</a>
+                            <a href="../donate.html">Donate</a>
+                            <a href="../contact.html">Contact Us</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <main>
+            <img class="listing_thumb" src="classical_files/profile.jpg">
+            <h1>CLASSICAL, 2020, 16.0h dark bay gelding</h1>
+            <p>Located at the Finger Lakes Race Track in Farmington, NY (near Rochester, NY).</p>
+            <p>This handsome, well- travelled son of Uncle Mo, a $175K yearling, affectionately called “Chewey”, has raced at tracks all over the country- KY, CA, and NY. So it was no surprise to us to learn that he loads and ships really well. We heard that he is game for anything- his connections have even played around with free jumping him when he’s been wintered on the farm. He’s described as a giant goof and even bigger attention seeking hound who craves to be in the spotlight 24/7! His connections fondly tell us “he is like Dennis the Menace in a horse body- always wanting to be in your business” and though he will mischievously push boundaries, he’s also not upset when called out on it (oops! My bad). He’s said to be great in his stall… unless you are giving attention to a stablemate that he thinks should be his! But once he’s tacked up, he is all business. We were told he’s good to ride and that out on the track, you can stop him and stand on a loose rein as he’s perfectly happy to watch the other horse’s workouts.</p>
+            <p>Last year, after losing a photo finish, it was discovered that he had fracture his RF sesamoid. Fortunately, it did not involve the suspensory and has been properly and carefully rehabbed. This year, after evaluating all the factors, his connections have decided to retire him. The vet has cleared him to start training for new career options and said that he should be suitable for dressage, flatwork, trail, or as a lower level hunter / jumper. Which leave you many options! Note: his connections are happy to share his x-rays and history to seriously interested parties. They are looking for the “perfect home” for a much-loved boy and will carefully screen candidates.</p>
+            <p>He was eager to move out to show off his jog to strut his stuff- polite but happily expressive. In his video, he is barefoot on the pavement. We were told that a quirk is that although his front shoes are never an issue, he is a Houdini with throwing off his hind ones.  And he can also be a tad anxious about the farrier handling his hind feet. But he has also always trained well without his hind shoes.</p>
+            <p>Off the track, he is friendly and playful with other horses in turn-out but never buddy sour. Instead, he really bonds to people and will leave the herd and run to the gate should a person arrive. This guy was Mr. Personality Plus. He will keep you laughing at his antics every day. And should you ever need help zipping and unzipping your jacket, he’s your guy!</p>
+            <p>Classical is by Uncle Mo and out of a First Defense mare with Unbridled and Blushing Groom also appearing in his pedigree.  His second dam, Flute, is a Kentucky Oaks Winner. </p>
+            <p>Please note that references will be required and checked prior to being able to purchase this horse. Please see our post pinned to the top of our FB page for more information.</p>
+            <p>Yvonne Fay (585) 301-7190</p>
+            <p>$2,500, neg.</p>
+            <p>A PPE is always recommended. For information about vet practices available to do PPEs, and other important information about the buying process, please see the page.
+                <a href="../howtobuy.html">How to Buy</a>
+            </p>
+            <p>
+                <a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&amp;refno=10758511&amp;registry=T&amp;rbt=TB" target="_blank" rel="noreferrer noopener">Race Record</a>
+            </p>
+            <p>
+                <a rel="noreferrer noopener" href="https://www.pedigreequery.com/classical17" target="_blank">Pedigree</a>
+            </p>
+            <div id="image_gallery_full">
+                <img src="classical_files/h8.jpg" full_size="classical_files/h8.jpg">
+                <img src="classical_files/h7.jpg" full_size="classical_files/h7.jpg">
+                <img src="classical_files/h6.jpg" full_size="classical_files/h6.jpg">
+                <img src="classical_files/h5.jpg" full_size="classical_files/h5.jpg">
+                <img src="classical_files/h4.jpg" full_size="classical_files/h4.jpg">
+                <img src="classical_files/h3.jpg" full_size="classical_files/h3.jpg">
+                <img src="classical_files/h2.jpg" full_size="classical_files/h2.jpg">
+                <img src="classical_files/h1.jpg" full_size="classical_files/h1.jpg">
+            </div>
+            <div class="large_image_wrapper">
+                <span class="prev_image" onclick="prevImage()">
+                &lt;
+            </span>
+                <img id="full_size_image" src="" onload="resizeImage()">
+                <span class="next_image" onclick="nextImage()">
+                &gt;
+            </span>
+            </div>
+            <div id="gallery_dot_progress">
+        </div>
+            <div class="jog_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UPM70Qy4v3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <div class="footer_logo">
+                <img src="../images/fb_logo.jpg" alt="Finger Lakes Finest Logo" class="footer_logo">
+            </div>
+            <p class="footer_text">
+                <a href="mailto:fingerlakesfinest@gmail.com">fingerlakesfinest@gmail.com</a>
+            </p>
+            <a href="https://www.facebook.com/fingerlakesfinesttbs">
+                <img src="../images/facebook.gif">
+            </a>
+        </footer>
+        <script src="../gallery.js"></script>
+    </body>
+</html>
