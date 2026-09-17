@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <title>rollofthesoul | Finger Lakes Finest Thoroughbreds, Inc</title>
+    </head>
+    <body onresize="resizeImage()" onload="drawGallery()">
+        <header>
+            <div class="logo_box">
+                <img src="../images/logo.jpg" alt="Finger Lakes Finest Thoroughbreds Inc" class="logo">
+            </div>
+            <div class="nav_box">
+                <nav class="nav_normal">
+                    <a href="../index.html">Home</a>
+                    <a href="../howtobuy.html">How to Buy</a>
+                    <a href="../available.html">Available Horses</a>
+                    <a href="../placed.html">Placed Horses</a>
+                    <a href="../resources.html">Resources</a>
+                    <a href="../donate.html">Donate</a>
+                    <a href="../contact.html">Contact Us</a>
+                </nav>
+            </div>
+            <div class="nav_box_mobile">
+                <input id="toggle" type="checkbox">
+                <label for="toggle" class="hamburger">
+                    <div class="htop"></div>
+                    <div class="hmid"></div>
+                    <div class="hbottom"></div>
+                </label>
+                <div class="ham_nav">
+                    <nav class="nav_mobile">
+                        <div class="nav_mobile_inner">
+                            <a href="../index.html">Home</a>
+                            <a href="../howtobuy.html">How to Buy</a>
+                            <a href="../available.html">Available Horses</a>
+                            <a href="../placed.html">Placed Horses</a>
+                            <a href="../resources.html">Resources</a>
+                            <a href="../donate.html">Donate</a>
+                            <a href="../contact.html">Contact Us</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <main>
+            <img class="listing_thumb" src="rollofthesoul_files/profile.jpg">
+            <h1>ROLLOFTHESOUL,  2021, 15.2 chestnut gelding</h1>
+            <p>Located at the Finger Lakes Race Track in Farmington, NY (near Rochester, NY).</p>
+            <p>This cutie has been on our radar for a few years, initially because of his backstory. He had a rough start in life- his connection took him on as a pet project when FL trainers stepped in to take horses in a case from a breeder who had fallen on hard times and gotten into trouble. This baby arrived malnourished and severely underweight, obviously delaying his introduction to the ‘normal’ racehorse training cycle. We continued to visit him as we walked by his barn because he is always such a friendly and charming character. But he remains unsure and a tad nervous about being an actual racehorse. When we asked if, as a 5-year old, he had yet broken his maiden, his trainer just snorted. This basically summarizes his glorious race career even better than his Equibase stats ever could (10 starts with a 0-0-1 record). Where he does shine though is in his time on the farm as a “pet pony”. Over the winter, he happily settles in to farm life where the whole family loves on him! The kids can pop on, his trainer rides him around bareback in a hackamore or simple snaffle (we were told that he also has a very soft mouth). And though his connections contemplated keeping him as a track pony, they realize his true happiest self is not track life.</p>
+            <p>Today, his rough start doesn’t show- although not a huge horse, he is thick, sturdy, with solid bone, good balance, nice proportions and topline. Not that we’re biased, but he’s completely adorable and resembles an oversize pony with a gorgeous forelock. Described as being a “delight” in the barn, we were told that he has no vices- stable or ridden. His only bad habit is that he likes to “dunk” his hay into his water bucket. In his video, this cutie carries himself like a much larger horse moving with a big stride and springy steps.</p>
+            <p>He is by Solomini (Curlin) out of a Forestry mare with Danzig and Unbridled also appearing in his pedigree.</p>
+            <p>A long-time volunteer favorite, we love his story and would love to see what his next chapters bring! If you are on the hunt for your next soulmate who checks these boxes: young, fun-sized, lightly raced, sensible, cuddle-bug gelding who is already happily acclimated to life off the track… What are you waiting for? Here he is!</p>
+            <p>Please note that references will be required and checked prior to being able to purchase this horse. Please see our post pinned to the top of our FB page for more information.</p>
+            <p>Lauren Linn (585) 867-1157</p>
+            <p>$2,500, neg.</p>
+            <p>A PPE is always recommended. For information about vet practices available to do PPEs, and other important information about the buying process, please see the page.
+                <a href="../howtobuy.html">How to Buy</a>
+            </p>
+            <p>
+                <a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&amp;refno=11098816&amp;registry=T" target="_blank" rel="noreferrer noopener">Race Record</a>
+            </p>
+            <p>
+                <a rel="noreferrer noopener" href="https://www.equineline.com/Free-5X-Pedigree.cfm?page_state=ORDER_AND_CONFIRM&amp;include_sire_line=N&amp;include_truenick=N&amp;reference_number=11098816" target="_blank">Pedigree</a>
+            </p>
+            <div id="image_gallery_full">
+                <img src="rollofthesoul_files/h8.jpg" full_size="rollofthesoul_files/h8.jpg">
+                <img src="rollofthesoul_files/h7.jpg" full_size="rollofthesoul_files/h7.jpg">
+                <img src="rollofthesoul_files/h6.jpg" full_size="rollofthesoul_files/h6.jpg">
+                <img src="rollofthesoul_files/h5.jpg" full_size="rollofthesoul_files/h5.jpg">
+                <img src="rollofthesoul_files/h4.jpg" full_size="rollofthesoul_files/h4.jpg">
+                <img src="rollofthesoul_files/h3.jpg" full_size="rollofthesoul_files/h3.jpg">
+                <img src="rollofthesoul_files/h2.jpg" full_size="rollofthesoul_files/h2.jpg">
+                <img src="rollofthesoul_files/h1.jpg" full_size="rollofthesoul_files/h1.jpg">
+            </div>
+            <div class="large_image_wrapper">
+                <span class="prev_image" onclick="prevImage()">
+                &lt;
+            </span>
+                <img id="full_size_image" src="" onload="resizeImage()">
+                <span class="next_image" onclick="nextImage()">
+                &gt;
+            </span>
+            </div>
+            <div id="gallery_dot_progress">
+        </div>
+            <div class="jog_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VfjvAsY4hGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <div class="footer_logo">
+                <img src="../images/fb_logo.jpg" alt="Finger Lakes Finest Logo" class="footer_logo">
+            </div>
+            <p class="footer_text">
+                <a href="mailto:fingerlakesfinest@gmail.com">fingerlakesfinest@gmail.com</a>
+            </p>
+            <a href="https://www.facebook.com/fingerlakesfinesttbs">
+                <img src="../images/facebook.gif">
+            </a>
+        </footer>
+        <script src="../gallery.js"></script>
+    </body>
+</html>
