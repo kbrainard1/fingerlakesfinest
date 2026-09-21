@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <title>Miss Pab | Finger Lakes Finest Thoroughbreds, Inc</title>
+    </head>
+    <body onresize="resizeImage()" onload="drawGallery()">
+        <header>
+            <div class="logo_box">
+                <img src="../images/logo.jpg" alt="Finger Lakes Finest Thoroughbreds Inc" class="logo">
+            </div>
+            <div class="nav_box">
+                <nav class="nav_normal">
+                    <a href="../index.html">Home</a>
+                    <a href="../howtobuy.html">How to Buy</a>
+                    <a href="../available.html">Available Horses</a>
+                    <a href="../placed.html">Placed Horses</a>
+                    <a href="../resources.html">Resources</a>
+                    <a href="../donate.html">Donate</a>
+                    <a href="../contact.html">Contact Us</a>
+                </nav>
+            </div>
+            <div class="nav_box_mobile">
+                <input id="toggle" type="checkbox">
+                <label for="toggle" class="hamburger">
+                    <div class="htop"></div>
+                    <div class="hmid"></div>
+                    <div class="hbottom"></div>
+                </label>
+                <div class="ham_nav">
+                    <nav class="nav_mobile">
+                        <div class="nav_mobile_inner">
+                            <a href="../index.html">Home</a>
+                            <a href="../howtobuy.html">How to Buy</a>
+                            <a href="../available.html">Available Horses</a>
+                            <a href="../placed.html">Placed Horses</a>
+                            <a href="../resources.html">Resources</a>
+                            <a href="../donate.html">Donate</a>
+                            <a href="../contact.html">Contact Us</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+        </header>
+        <main>
+            <img class="listing_thumb" src="misspab_files/profile.jpg">
+            <h1>MISS PAB,  2019, 15.3 dark bay mare</h1>
+            <p>Located at the Finger Lakes Race Track in Farmington, NY (near Rochester, NY).</p>
+            <p>If this post feels a little like déjà vu, it is. We posted this classy mare late last year but she unfortunately, she wasn’t placed before the season ended. We remembered her fondly and were delighted to see that she is just as lovely now. We’ve updated her photos and jog video.</p>
+            <p>The connections of this quiet and respectful mare always have nothing but superlatives to tell us about her. It was obvious to us that they deeply care for and admire her. We were told us that “she is the best” and very “smart”. We heard that she is such a great and easy horse on the farm and so trustworthy that over the winter, their young teen daughters feed, handle, and yes, even ride her at the farm. She was stated to be very sound, having no vices, and is easy to handle. It was even mentioned that she has the cleanest and easiest stall in the barn to clean (yes, we always love that when we are the ones on barn duty!).</p>
+            <p>She was a great model for her photo shoot- she stood quietly remaining alert, curious, and cooperative (and very happy to discover that peppermints were involved too!). She has a more compact build and balance. We liked the length of her shoulder and her powerful hindquarters. We loved the adorable heart-shaped marking on her pretty face, her dapples, and soft, shiny coat! She was attentive and relaxed, jogging quietly and politely for her handler. Overall, we observed a sweet, kind, well-mannered, and easy-going mare. She’s had a very respectable career- a true war horse mare. A gritty campaigner with 58 starts who in the past two years, facing tougher conditions, has struggled to get on the board.  So, as the season is winding down, her connections seek only the very best of homes for their beloved girl. She certainly has won our respect- a well behaved and elegant lady with class, toughness, and demonstrated durability.</p>
+            <p>Miss Pab is by Exaggerator (Curlin) out of a Malibu Moon mare with Giant’s Causeway also appearing in her pedigree, some very popular sports sire lines. With her kindness, great brain, and solid work ethic, we could see her as a fun and agreeable partner, up for trying anything and everything that you might want to pursue.</p>
+            <p>Contact: Julie Pierson (315) 719-9583</p>
+            <p>Price:  $2,500 neg.</p>
+            <p>Please note that references will be required and checked prior to being able to purchase this horse. Please see our post pinned to the top of our FB page for more information.</p>
+            <p>A PPE is always recommended. For information about vet practices available to do PPEs, and other important information about the buying process, please see the <a href="\&quot;../howtobuy.html\&quot;">How to Buy</a> page.
+            </p>
+            <p>
+                <a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&amp;refno=10652242&amp;registry=T&amp;rbt=TB" target="_blank" rel="noreferrer noopener">Race Record</a>
+            </p>
+            <p>
+                <a rel="noreferrer noopener" href="https://www.equineline.com/Free-5X-Pedigree.cfm?page_state=ORDER_AND_CONFIRM&amp;include_sire_line=N&amp;include_truenick=N&amp;reference_number=10652242" target="_blank">Pedigree</a>
+            </p>
+            <div id="image_gallery_full">
+                <img src="misspab_files/mp8.jpg" full_size="misspab_files/mp8.jpg">
+                <img src="misspab_files/mp7.jpg" full_size="misspab_files/mp7.jpg">
+                <img src="misspab_files/mp6.jpg" full_size="misspab_files/mp6.jpg">
+                <img src="misspab_files/mp5.jpg" full_size="misspab_files/mp5.jpg">
+                <img src="misspab_files/mp4.jpg" full_size="misspab_files/mp4.jpg">
+                <img src="misspab_files/mp3.jpg" full_size="misspab_files/mp3.jpg">
+                <img src="misspab_files/mp2.jpg" full_size="misspab_files/mp2.jpg">
+                <img src="misspab_files/mp1.jpg" full_size="misspab_files/mp1.jpg">
+            </div>
+            <div class="large_image_wrapper">
+                <span class="prev_image" onclick="prevImage()">
+                &lt;
+            </span>
+                <img id="full_size_image" src="" onload="resizeImage()">
+                <span class="next_image" onclick="nextImage()">
+                &gt;
+            </span>
+            </div>
+            <div id="gallery_dot_progress">
+        </div>
+            <div class="jog_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PhdOfpVtE1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="jog_video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YFI2l8GY_mY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <div class="footer_logo">
+                <img src="../images/fb_logo.jpg" alt="Finger Lakes Finest Logo" class="footer_logo">
+            </div>
+            <p class="footer_text">
+                <a href="mailto:fingerlakesfinest@gmail.com">fingerlakesfinest@gmail.com</a>
+            </p>
+            <a href="https://www.facebook.com/fingerlakesfinesttbs">
+                <img src="../images/facebook.gif">
+            </a>
+        </footer>
+        <script src="../gallery.js"></script>
+    </body>
+</html>
