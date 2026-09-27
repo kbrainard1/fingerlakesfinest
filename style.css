@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  padding: 10px;
+  margin: 2% 2%
 }
 
 p,
@@ -322,6 +322,16 @@ footer {
   margin-top: 0px;
 }
 
+@media screen and (max-width: 800px) {
+	  .available_snippet_inner_div {
+	  display: inline-block;
+  }
+  
+  .snippet_thumb {
+	  float: left;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .nav_box {
     display: none;
@@ -347,6 +357,8 @@ footer {
   .home_header {
     font-size: 14pt;
   }
+}
+
 
   @media screen and (max-width: 450px) {
 
