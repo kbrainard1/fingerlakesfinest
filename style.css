@@ -5,6 +5,11 @@
   --site-light-blue: rgb(0, 0, 200);
 }
 
+a {
+	color: var(--site-light-blue);
+	text-decoration: none;
+}
+
 body {
   margin: 5% 10%;
   background-color: white;
