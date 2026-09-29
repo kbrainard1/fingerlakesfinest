@@ -244,6 +244,13 @@ footer {
   margin-bottom: 10px;
 }
 
+.listing_last_updated {
+	font-style: italic;
+	font-size: 10pt;
+	padding: 5px;
+	text-align: right;
+}
+
 /* Available/Placed horses list pages */
 
 .available_snippet_div {
