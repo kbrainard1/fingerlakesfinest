@@ -7,7 +7,7 @@
 
 a {
 	color: var(--site-light-blue);
-	text-decoration: none;
+	/*text-decoration: none; With blue-light screen dimmer, links are hard to spot otherwise */
 }
 
 body {
