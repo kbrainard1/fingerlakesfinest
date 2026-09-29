@@ -7,7 +7,7 @@
 
 a {
 	color: var(--site-light-blue);
-	text-decoration: none;
+	/*text-decoration: none; With blue-light screen dimmer, links are hard to spot otherwise */
 }
 
 body {
@@ -262,6 +262,14 @@ footer {
   margin-top: 5px;
 }
 
+.available_snippet_inner_div p a {
+  text-decoration: none;
+}
+
+.available_snippet_inner_div p a:hover {
+  text-decoration: underline;
+}
+
 .snippet_thumb {
   height: 100px;
   margin-right: 20px;
@@ -271,6 +279,10 @@ footer {
   text-decoration: none;
   font-size: large;
   color: rgb(120, 120, 120);
+}
+
+.available_title:hover {
+	color: var(--site-light-blue);
 }
 
 /* Mobile (or tiny desktop) */
@@ -368,6 +380,10 @@ footer {
 
   .home_header {
     font-size: 14pt;
+  }
+  
+  .available_snippet_inner_div p a {
+    text-decoration: underline; /* hover on mobile isn't really a thing */
   }
 }
 
