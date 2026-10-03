@@ -185,7 +185,7 @@ footer {
 	color: rgb(120, 120, 120);
 }
 
-.recent_adds :nth-child(11) {
+.recent_adds :nth-child(10) {
 	border-bottom: none;
 }
 
