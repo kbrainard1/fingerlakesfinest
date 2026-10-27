@@ -121,6 +121,8 @@ main .nav_normal {
     max-width: 90%;
 }
 
+
+
 .nav_box {
   display: block;
   margin-left: auto;
@@ -341,8 +343,21 @@ footer {
 
 /* Available/Placed horses list pages */
 
+.placed_detail_image {
+    display: inline-block;
+    margin: 5px;
+    height: 150px;
+}
+
 .available_snippet_div {
   margin-top: 25px;
+}
+
+.available_snippet_div h2 {
+    color: rgb(120, 120, 120);
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: large;
 }
 
 .available_snippet_inner_div {
